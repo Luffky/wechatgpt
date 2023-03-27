@@ -14,8 +14,8 @@ def run():
         # create channel
         channel_name='wx'
         print("\nPlease select your channel: terminal or wechat:")
-        if input() == 'terminal':
-            channel_name='terminal'
+        # if input() == 'terminal':
+        #     channel_name='terminal'
         channel = channel_factory.create_channel(channel_name)
         if channel_name=='wx':
             PluginManager().load_plugins()
