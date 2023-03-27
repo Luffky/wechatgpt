@@ -27,7 +27,7 @@ class TerminalChannel(Channel):
             if self.current_role is not "":
                 if prompt == "stop":
                     self.current_role = ""
-                    print("Bot: 角色扮演开始，从先开始我将停止角色扮演: ")
+                    print("Bot: 从现在开始我将停止角色扮演: ")
                     continue
                 else:
                     prompt = terminal_role_map[self.current_role] + prompt
